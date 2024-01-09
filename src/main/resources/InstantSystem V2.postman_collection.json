@@ -1,0 +1,130 @@
+{
+	"info": {
+		"_postman_id": "9e899d09-ca10-452d-bf81-c9b19246b30f",
+		"name": "InstantSystem V2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5583248"
+	},
+	"item": [
+		{
+			"name": "app v2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/api/v2/parking/grandpoitiers",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"v2",
+						"parking",
+						"grandpoitiers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "app pagination v2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/api/v2/parking/grandpoitiers/pagination?page=1&pageSize=3",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"v2",
+						"parking",
+						"grandpoitiers",
+						"pagination"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "pageSize",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Liste Parking v2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/api/v2/parking/list/grandpoitiers",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"v2",
+						"parking",
+						"list",
+						"grandpoitiers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Liste disponibilité v2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/api/v2/parking/dispo/grandpoitiers",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"v2",
+						"parking",
+						"dispo",
+						"grandpoitiers"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "host",
+			"value": "http://localhost:8080",
+			"type": "string"
+		}
+	]
+}
